@@ -3,9 +3,9 @@ import React, { Component } from 'react'
 export default class PigCard extends Component {
 	render() {
 		return (
-			<div className='ui centered card move right reveal'>
+			<div className='ui centered card move right reveal image'>
 				<div className="image visible content">
-					<img src={this.props.img} className="ui small image visible" alt={this.props.pig.name} />
+					<img src={this.props.img} alt={this.props.pig.name} />
 				</div>
 				<div className="hidden content">
 					<div className="ui left aligned container" style={{ height: 250 }}>
