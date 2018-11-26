@@ -1,0 +1,15 @@
+import React from 'react';
+
+const Hog = (props) => {
+    return (
+	    <div className="ui eight wide column">
+	      <div className="card">
+	        <div className="content">
+   	          <span className="header">{props.hog.name}</span>
+	        </div>
+	      </div>
+	    </div>
+    );
+}
+
+export default Hog;
