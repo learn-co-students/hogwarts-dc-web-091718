@@ -32,8 +32,8 @@ export default class Hog extends Component {
         return (
         <li onClick={this.handleClick} className="ui eight wide column">
             <h4>{this.state.hog.name}</h4>
-            <img src={images[this.state.hog.name.replace(" ", '_').toLowerCase() + ".jpg"]} />
-            {this.state.details ? <Details details={this.state.hog} /> : {}}
+            <img src={images[this.state.hog.name.replace(/\s/g, '_').toLowerCase() + ".jpg"]} />
+            {this.state.details ? <Details details={this.state.hog} /> : ''}
         </li>
         )}
 }
